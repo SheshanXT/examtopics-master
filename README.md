@@ -7,8 +7,8 @@
   <a href="https://go.dev/">
     <img src="https://img.shields.io/badge/Built%20with-Go-blue?style=flat-square" alt="Built with Go">
   </a>
-  <a href="https://github.com/npapatheodorou/pretty-examtopics-downloader/releases/latest">
-    <img src="https://img.shields.io/github/v/release/npapatheodorou/pretty-examtopics-downloader?include_prereleases&label=Latest%20Release&style=flat-square" alt="Latest Release">
+  <a href="https://github.com/SheshanXT/examtopic-fix/releases">
+    <img src="https://img.shields.io/badge/Release-v1.0.0-blue?style=flat-square" alt="Latest Release">
   </a>
 </p>
 
@@ -41,23 +41,29 @@ site access controls.
 
 ## Quick Start (Windows)
 
-### Option 1: Use a Published .exe (Easiest)
+### Option 1: Download the Latest Pre-Built .exe (Easiest)
 
-1. Go to the [Releases](https://github.com/npapatheodorou/pretty-examtopics-downloader/releases) page
-2. Download the latest `examtopics-downloader-windows-amd64.exe`
-3. Double-click to run - no installation needed!
+1. Go to the [Releases](https://github.com/SheshanXT/examtopic-fix/releases) page for this repository.
+2. Download `examtopics-downloader-windows-amd64.exe` from the latest release.
+3. Double-click to run or launch it in a terminal.
 
-Published releases can lag the current source branch. Check the release date and
-notes; build from source when you need changes that have not been released yet.
+> [!WARNING]
+> Do **not** use older `.exe` binaries from upstream forks (such as `npapatheodorou` or `thatonecodes`). Those old releases lack critical fixes for anti-bot rate limiting, site-provided "Reveal Solution" answers, HOTSPOT exhibits, image-based option parsing, and pagination.
 
-### Option 2: Build the Current Source
+### Option 2: Run or Build from Source
 
 If you have [Go installed](https://go.dev/dl/):
 
 ```bash
-git clone https://github.com/npapatheodorou/pretty-examtopics-downloader.git
-cd pretty-examtopics-downloader
+git clone https://github.com/SheshanXT/examtopic-fix.git
+cd examtopic-fix
 go build -o examtopics-downloader.exe ./cmd
+```
+
+Or run directly without building:
+
+```bash
+go run ./cmd
 ```
 
 Or use the included build script:
