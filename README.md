@@ -43,7 +43,7 @@ site access controls.
 
 ### Option 1: Download the Latest Pre-Built .exe (Easiest)
 
-1. Go to the [Releases](https://github.com/SheshanXT/examtopic-fix/releases) page for this repository.
+1. Go to the [Releases](https://github.com/SheshanXT/examtopics-master/releases) page for this repository.
 2. Download `examtopics-downloader-windows-amd64.exe` from the latest release.
 3. Double-click to run or launch it in a terminal.
 
